@@ -1,0 +1,24 @@
+From d28cc5bc41a580d9c7adaf2832d961ab260c6dbb Mon Sep 17 00:00:00 2001
+From: Daniel Sikorski <dadi.sikorski@gmail.com>
+Date: Sun, 5 Mar 2017 17:30:59 +0100
+Subject: [PATCH] kenzo: add kate to ota assert devices
+
+Allow flashing kenzo ROMs on kate
+---
+ BoardConfig.mk | 3 +--
+ 1 file changed, 1 insertion(+), 2 deletions(-)
+
+diff --git a/BoardConfig.mk b/BoardConfig.mk
+index 03f6ab1..f6db98f 100644
+--- a/BoardConfig.mk
++++ b/BoardConfig.mk
+@@ -20,8 +20,7 @@
+ DEVICE_PATH := device/xiaomi/kenzo
+ 
+ # Assert
+-TARGET_OTA_ASSERT_DEVICE := kenzo
+-
++TARGET_OTA_ASSERT_DEVICE := kenzo,kate
+ # Bluetooth
+ BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := $(DEVICE_PATH)/bluetooth
+ 
