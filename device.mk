@@ -110,10 +110,6 @@ PRODUCT_PACKAGES += \
     memtrack.msm8952 \
     liboverlay
 
-# Fingerprint
-PRODUCT_PACKAGES += \
-   fingerprint.msm8952
-
 # FM
 PRODUCT_PACKAGES += \
     FMRadio \
